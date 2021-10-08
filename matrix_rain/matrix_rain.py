@@ -29,9 +29,9 @@ matrix = Matrix(width=MATRIX_WIDTH, height=MATRIX_HEIGHT, bit_depth=6)
 display = matrix.display
 
 # create groups
-drops = displayio.Group(max_size=MAX_DROPS)            # these fall and change sprite
-tails = displayio.Group(max_size=MAX_DROPS*TAIL_SIZE)  # these fade and disappear
-main_group = displayio.Group(max_size=2)               # holds the drops and tails
+drops = displayio.Group()         # these fall and change sprite
+tails = displayio.Group()         # these fade and disappear
+main_group = displayio.Group()    # holds the drops and tails
 main_group.append(tails)
 main_group.append(drops)
 display.show(main_group)

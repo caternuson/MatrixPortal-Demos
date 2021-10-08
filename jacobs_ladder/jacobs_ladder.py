@@ -19,7 +19,7 @@ matrix = Matrix(width=MATRIX_WIDTH, height=MATRIX_HEIGHT, bit_depth=6)
 display = matrix.display
 
 # create group
-splash = displayio.Group(max_size=1)
+splash = displayio.Group()
 display.show(splash)
 
 # create bitmap
